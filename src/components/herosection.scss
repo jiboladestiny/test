@@ -1,0 +1,65 @@
+.herosection {
+  background-color: var(--secondary-black);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  .greencircle {
+    position: absolute;
+    top: 3rem;
+    right: 55%;
+  }
+
+  .right {
+    div {
+      position: relative;
+      .intersection {
+        position: absolute;
+        top: 0;
+        right: 11.5rem;
+        z-index: 0 !important;
+      }
+
+      .google{
+       position: absolute;
+        top: 6rem;
+        left: -3rem;
+
+      }
+      .rectblue{
+       position: absolute;
+        top: 18rem;
+        left: -4rem;
+
+      }
+
+      .facebook{
+       position: absolute;
+        bottom: -2rem;
+        left: -4rem;
+
+      }
+
+        .rectpurple{
+       position: absolute;
+        bottom: -2rem;
+        right: 2rem;
+
+      }
+        .slack{
+       position: absolute;
+        bottom: 12rem;
+        right: 7.5rem;
+        z-index: 0;
+
+      }
+        .rectred{
+       position: absolute;
+        top: 2rem;
+        right: 7rem;
+
+      }
+    }
+  }
+}

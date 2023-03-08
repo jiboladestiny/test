@@ -1,0 +1,13 @@
+.services{
+    margin-top: 7rem;
+    .service-wrapper{
+        background-color: var(--grey-black);
+        padding: 2rem;
+        height: 100%;
+        width: 100%;
+        p{
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+}

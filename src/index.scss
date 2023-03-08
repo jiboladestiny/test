@@ -1,0 +1,18 @@
+@import url(./components/navbar.scss);
+@import url(./utility.scss);
+@import url(./components/herosection.scss);
+@import url(./components/services.scss);
+@import url(./components/works.scss);
+:root {
+  --black: #000000;
+  --light-green: #1EB25E;
+  --white: white;
+  --secondary-grey:#C9C9C9;
+  --secondary-black: #0D0D0D;
+  --grey-black:#131313;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
