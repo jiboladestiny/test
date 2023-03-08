@@ -141,10 +141,85 @@ const Work = () => {
                     <img src={image1} className="img-fluid" alt="" />
                   </div>{" "}
                   <div className="col-md-4">
+                    <img src={image2} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image3} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image4} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image2} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image3} className="img-fluid" alt="" />
+                  </div>{" "}
+                </div>
+              </div>
+            )}
+            {show === 1 && (
+              <div className="tab-content">
+                <div className="wrappers row gy-4 gx-4 justify-content-center">
+                  <div className="col-md-4">
+                    <img src={image3} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image4} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image2} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image3} className="img-fluid" alt="" />
+                  </div>{" "}
+                </div>
+              </div>
+            )}{" "}
+            {show === 2 && (
+              <div className="tab-content">
+                <div className="wrappers row gy-4 gx-4 justify-content-center">
+                  <div className="col-md-4">
                     <img src={image1} className="img-fluid" alt="" />
                   </div>{" "}
                   <div className="col-md-4">
-                    <img src={image1} className="img-fluid" alt="" />
+                    <img src={image2} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image2} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image3} className="img-fluid" alt="" />
+                  </div>{" "}
+                </div>
+              </div>
+            )}{" "}
+            {show === 3 && (
+              <div className="tab-content">
+                <div className="wrappers row gy-4 gx-4 justify-content-center">
+                  <div className="col-md-4">
+                    <img src={image2} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image3} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image4} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image2} className="img-fluid" alt="" />
+                  </div>{" "}
+                </div>
+              </div>
+            )}
+            {show === 4 && (
+              <div className="tab-content">
+                <div className="wrappers row gy-4 gx-4 justify-content-center">
+                  <div className="col-md-4">
+                    <img src={image2} className="img-fluid" alt="" />
+                  </div>{" "}
+                  <div className="col-md-4">
+                    <img src={image3} className="img-fluid" alt="" />
                   </div>{" "}
                 </div>
               </div>
