@@ -4,11 +4,12 @@
 
   .control {
     position: absolute;
-    top:2rem;
+    top:1.5rem;
     right: 1rem;
     display: flex;
 
     div {
+      cursor: pointer;
       background-color: var(--white);
       color: var(--light-green);
       // padding: 0.5rem;

@@ -21,9 +21,12 @@
 
 @media screen and (max-width: 576px) {
   .tab-wrapper {
+
     overflow-x: scroll;
     display: flex;
-
+ &::-webkit-scrollbar {
+  height: 10px;
+}
       .tab-btn {
 
     min-width:143px;

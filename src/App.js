@@ -1,9 +1,12 @@
 import About from "./components/About";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 import Herosection from "./components/Herosection";
+import Nesletter from "./components/Nesletter";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Work from "./components/Work";
+
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
       </div>
       <Testimonials />
       <Blog />
+      <Nesletter/>
+    <Footer/>
     </>
   );
 }

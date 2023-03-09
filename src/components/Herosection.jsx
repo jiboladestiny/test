@@ -21,7 +21,7 @@ const Herosection = () => {
       <div className="herosection">
         <img src={greencircle} className="greencircle" alt='' />
         <div className="container row justify-content-between align-items-center">
-          <div className="col-md-5 left">
+          <div className="col-md-10 col-lg-5 left">
             <h2 className="heading">Transform your online presence</h2>
 
             <p className="paragraph mt-4">

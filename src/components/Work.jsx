@@ -228,8 +228,8 @@ const Work = () => {
         </div>
       </div>
 
-      <div className="d-flex justify-content-center">
-        <button className="general-btn mt-5">See more</button>
+      <div className="d-flex justify-content-center mt-5">
+        <button className="general-btn">See more</button>
       </div>
     </div>
   );

@@ -17,26 +17,25 @@ const Services = () => {
       </div>
 
       <div className="row mt-5 gy-4">
-        <div className="col-md-3">
+        <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
             <img src={search} width="45" alt="" />
             <p className="mt-2">Search Engine Optimization</p>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
             <img src={website} width="45" alt="" />
             <p className="mt-2">Website design & Development</p>
           </div>
-     
         </div>
-        <div className="col-md-3">
+        <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
             <img src={writting} width="45" alt="" />
             <p className="mt-2">Content Writing</p>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
             <img src={social} width="45" alt="" />
             <p className="mt-2">Graphics & Social media Marketing</p>
