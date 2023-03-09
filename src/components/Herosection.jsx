@@ -19,7 +19,7 @@ const Herosection = () => {
     <>
       <Navbar />
       <div className="herosection">
-        <img src={greencircle} className="greencircle" srcset="" />
+        <img src={greencircle} className="greencircle" alt='' />
         <div className="container row justify-content-between align-items-center">
           <div className="col-md-5 left">
             <h2 className="heading">Transform your online presence</h2>

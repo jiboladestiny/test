@@ -1,12 +1,12 @@
-import { useState } from "react";
+// import { useState } from "react";
 import logo from "../asset/marketing agency 1.svg";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   return (
     <div className="topnav">
