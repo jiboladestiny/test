@@ -79,15 +79,17 @@ const Footer = () => {
         <hr />
         <div className="copyright py-3 container">
           <div className="row">
-            <div className='col-md-8'>
+            <div className="col-md-8">
               <p>
                 © 2023 MARAYA Insurance Inc. Patent Pending. All Rights
                 Reserved.
               </p>
             </div>
-            <div className='col-md-3'>
+            <div className="col-md-3">
               {" "}
-              <p className='text-end'>Privacy | Terms of Service</p>
+              <p className="text-end">
+                <span  className='privacy'>Privacy</span> | Terms of Service
+              </p>
             </div>
           </div>
         </div>
