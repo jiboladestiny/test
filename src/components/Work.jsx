@@ -6,78 +6,7 @@ import image4 from "../asset/works/image 11.svg";
 
 const Work = () => {
   const [show, setShow] = useState(0);
-  // const works = [
-  //   {
-  //     id: 1,
-  //     category: "website",
-  //     image: image1,
-  //   },
-  //   {
-  //     id: 2,
 
-  //     category: "website",
-  //     image: image1,
-  //   },
-  //   {
-  //     id: 3,
-
-  //     category: "website",
-  //     image: image1,
-  //   },
-  //   {
-  //     id: 4,
-
-  //     category: "mobile",
-  //     image: image2,
-  //   },
-  //   {
-  //     id: 5,
-
-  //     category: "mobile",
-  //     image: image2,
-  //   },
-  //   {
-  //     id: 6,
-
-  //     category: "mobile",
-  //     image: image2,
-  //   },
-  //   {
-  //     id: 7,
-
-  //     category: "branding",
-  //     image: image3,
-  //   },
-  //   {
-  //     id: 8,
-  //     category: "branding",
-  //     image: image3,
-  //   },
-  //   {
-  //     id: 9,
-
-  //     category: "branding",
-  //     image: image3,
-  //   },
-  //   {
-  //     id: 10,
-
-  //     category: "ui",
-  //     image: image4,
-  //   },
-  //   {
-  //     id: 11,
-
-  //     category: "ui",
-  //     image: image4,
-  //   },
-  //   {
-  //     id: 12,
-
-  //     category: "ui",
-  //     image: image4,
-  //   },
-  // ];
 
   const tabs = [
     {
@@ -97,20 +26,7 @@ const Work = () => {
     },
   ];
 
-  // const website = works.filter((item) => {
-  //   return item.category === "website";
-  // });
-
-  // const design = works.filter((item) => {
-  //   return item.category === "design";
-  // });
-
-  // const branding = works.filter((item) => {
-  //   return item.category === "branding";
-  // });
-  // const ui = works.filter((item) => {
-  //   return item.category === "ui";
-  // });
+ 
 
   const tabses = tabs.map((item, i) => (
     <button

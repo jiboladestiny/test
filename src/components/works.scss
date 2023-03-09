@@ -6,6 +6,8 @@
       background-color: transparent;
       color: var(--white);
       font-size: 18px;
+      border: none;
+      outline: none;
       font-weight: 500;
 
       &.active {
@@ -21,19 +23,16 @@
 
 @media screen and (max-width: 576px) {
   .tab-wrapper {
-
     overflow-x: scroll;
     display: flex;
- &::-webkit-scrollbar {
-  height: 10px;
-}
-      .tab-btn {
-
-    min-width:143px;
-  &:nth-child(4){
-    min-width: 155px;
+    &::-webkit-scrollbar {
+      height: 10px;
+    }
+    .tab-btn {
+      min-width: 143px;
+      &:nth-child(4) {
+        min-width: 155px;
+      }
+    }
   }
-  }
-  }
-
 }
