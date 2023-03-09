@@ -227,6 +227,10 @@ const Work = () => {
           </div>
         </div>
       </div>
+
+      <div className="d-flex justify-content-center">
+        <button className="general-btn mt-5">See more</button>
+      </div>
     </div>
   );
 };

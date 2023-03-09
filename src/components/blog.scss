@@ -1,0 +1,40 @@
+.blog {
+  margin-top: 7rem;
+  position: relative;
+
+  .control {
+    position: absolute;
+    top:2rem;
+    right: 1rem;
+    display: flex;
+
+    div {
+      background-color: var(--white);
+      color: var(--light-green);
+      // padding: 0.5rem;
+      font-size: 1.5rem;
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.active {
+        background-color: var(--light-green);
+        color: var(--white);
+      }
+    }
+  }
+
+  .blog-cont {
+    padding: 0.7rem;
+    background-color: var(--grey-black);
+    border-radius: 23px;
+    span {
+      color: var(--light-green);
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}

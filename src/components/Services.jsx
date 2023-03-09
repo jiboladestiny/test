@@ -16,7 +16,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="row mt-5">
+      <div className="row mt-5 gy-4">
         <div className="col-md-3">
           <div className="service-wrapper">
             <img src={search} width="45" alt="" />
@@ -28,6 +28,7 @@ const Services = () => {
             <img src={website} width="45" alt="" />
             <p className="mt-2">Website design & Development</p>
           </div>
+     
         </div>
         <div className="col-md-3">
           <div className="service-wrapper">
