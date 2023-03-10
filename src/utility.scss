@@ -1,17 +1,24 @@
 // components class
 
 .general-btn {
-  background-color: var(--light-green);
+  background-color: var(--white);
   border-radius: 50px;
   padding: 0.5rem 1.2rem;
   border: none;
   outline: none;
-  color: var(--white);
+  color: var(--black);
 }
 
 .heading {
   font-weight: 600;
-  font-size: 60px;
+  font-size: 55px ;
+  
+}
+
+.hero-heading {
+  font-weight: 600;
+  font-size: 55px ;
+  
 }
 
 .heading-2 {
@@ -42,6 +49,12 @@
 .green-header{
   font-weight: 24px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-heading{
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 992px) {

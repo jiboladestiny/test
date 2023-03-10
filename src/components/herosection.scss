@@ -1,10 +1,35 @@
 .herosection {
   background-color: var(--secondary-black);
   min-height: 100vh;
+  background-image: url("../asset/homepage-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   color: var(--white);
+  .container {
+    // top:10rem;
+    // left: 0;
+    // transform: translate(-50%, -50%);
+    // background-color: yellow;
+    // height: 100vh;
+  }
+  .main-img {
+    position: absolute;
+    width: 25rem;
+    bottom: -25rem;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+  .container {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  }
   .greencircle {
     position: absolute;
     top: 3rem;
@@ -13,7 +38,7 @@
 
   .right {
     div {
-      position: relative;
+      // position: relative;
       .intersection {
         position: absolute;
         top: 0;
@@ -21,50 +46,95 @@
         z-index: 0 !important;
       }
 
-      .google{
-       position: absolute;
+      .google {
+        position: absolute;
         top: 6rem;
         left: -3rem;
-
       }
-      .rectblue{
-       position: absolute;
+      .rectblue {
+        position: absolute;
         top: 18rem;
         left: -4rem;
-
       }
 
-      .facebook{
-       position: absolute;
+      .facebook {
+        position: absolute;
         bottom: -2rem;
         left: -4rem;
-
       }
 
-        .rectpurple{
-       position: absolute;
+      .rectpurple {
+        position: absolute;
         bottom: -2rem;
         right: 2rem;
-
       }
-        .slack{
-       position: absolute;
+      .slack {
+        position: absolute;
         bottom: 12rem;
         right: 7.5rem;
         z-index: 0;
-
       }
-        .rectred{
-       position: absolute;
+      .rectred {
+        position: absolute;
         top: 2rem;
         right: 7rem;
-
       }
     }
   }
 }
-@media screen and (max-width: 992px) {
-  .right{
+@media screen and (max-width: 576px) {
+  .main-img {
+    left: 55% !important;
+    width: 12rem !important;
+    bottom: -12rem !important;
+  }
+
+    .hero-paragraph {
     display: none;
   }
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .main-img {
+    left: 60% !important;
+    width: 14rem !important;
+    bottom: -17rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-img {
+    left: 75% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main-img {
+    left: 75% !important;
+  }
+}
+// @media screen and (max-width: 768px) {
+  // .hero-paragraph {
+  //   display: none;
+  // }
+
+//   .herosection {
+//     min-height: 85vh;
+//   }
+
+//   .main-img {
+//     width: 13rem;
+//     bottom: -15rem;
+//     left: 5%;
+//   }
+// }
+// @media screen and (max-width: 992px) {
+//   .right {
+//     display: none;
+//   }
+// }
+
+// @media screen and (max-width: 1200px) {
+// .main-img {
+//   bottom: -25rem;
+//   left: 75%;
+// }
+// }
