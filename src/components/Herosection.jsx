@@ -31,12 +31,12 @@ const Herosection = () => {
                 memorable brand identities
               </p>
 
-              <button className="general-btn mt-3">Contact us</button>
+              <button className="hero-btn mt-3 d-flex align-item-center">
+                Contact us <i class="bx bxs-right-arrow-circle"></i>
+              </button>
             </div>
 
-           
-              <img src={phone} alt="" className="main-img" />
-       
+            <img src={phone} alt="" className="main-img" />
           </div>
         </div>
       </div>

@@ -83,13 +83,18 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .herosection{
+    min-height: 90vh !important;
+  background-image: url("../asset/home-mob-bg.jpg");
+    
+  }
   .main-img {
     left: 55% !important;
     width: 12rem !important;
-    bottom: -12rem !important;
+    bottom: -13rem !important;
   }
 
-    .hero-paragraph {
+  .hero-paragraph {
     display: none;
   }
 }
@@ -112,9 +117,9 @@
   }
 }
 // @media screen and (max-width: 768px) {
-  // .hero-paragraph {
-  //   display: none;
-  // }
+// .hero-paragraph {
+//   display: none;
+// }
 
 //   .herosection {
 //     min-height: 85vh;

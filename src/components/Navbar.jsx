@@ -28,7 +28,7 @@ function Navbar() {
             <li class="nav-item p-2 ms-3">Latest work</li>
             <li class="nav-item p-2 ms-3">Testimonial</li>
             <li class="nav-item p-2 ms-3">
-              <button className="general-btn">Contact us</button>
+              <button className="hero-btn">Contact us</button>
             </li>
           </ul>
         </div>
@@ -43,7 +43,7 @@ function Navbar() {
 
         <div className="nav-end">
           {" "}
-          <button className="general-btn">Contact us</button>
+          <button className="hero-btn">Contact us</button>
         </div>
       </div>
     </div>
