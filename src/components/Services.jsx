@@ -16,7 +16,19 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="row mt-5 gy-4">
+      <div className="row justify-content-center mt-5 gy-4">
+        <div className="col-md-6 col-lg-3">
+          <div className="service-wrapper">
+            <img src={search} width="45" alt="" />
+            <p className="mt-2">Branding</p>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-3">
+          <div className="service-wrapper">
+            <img src={writting} width="45" alt="" />
+            <p className="mt-2">Content Writing</p>
+          </div>
+        </div>
         <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
             <img src={search} width="45" alt="" />
@@ -29,12 +41,7 @@ const Services = () => {
             <p className="mt-2">Website design & Development</p>
           </div>
         </div>
-        <div className="col-md-6 col-lg-3">
-          <div className="service-wrapper">
-            <img src={writting} width="45" alt="" />
-            <p className="mt-2">Content Writing</p>
-          </div>
-        </div>
+
         <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
             <img src={social} width="45" alt="" />
