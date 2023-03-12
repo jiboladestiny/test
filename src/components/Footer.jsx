@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../asset/marketing agency 1.svg'
+// import logo from '../asset/marketing agency 1.svg'
 import facebook from '../asset/footer/facebook.svg'
 import linkedin from '../asset/footer/linkedin.svg'
 import twitter from '../asset/footer/twitter.svg'
@@ -12,7 +12,7 @@ const Footer = () => {
     <div>
       <footer className="footer">
         <div className="container">
-          <img src={logo} className="img-fluid" alt="" />
+  
           <div className="row gy-4">
             <div className="col-md-4">
               <p className="paragraph">

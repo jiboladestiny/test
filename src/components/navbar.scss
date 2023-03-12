@@ -21,12 +21,12 @@
       cursor: pointer;
       transition: all ease-in-out 1s;
 
-      // &:hover {
-      //   background-color: grey;
-      //   color: var(--white);
-      //   cursor: pointer;
-      //   transition: all ease-in-out 1s;
-      // }
+      &:hover {
+        background-color: grey;
+        color: var(--white);
+        cursor: pointer;
+        transition: all ease-in-out 1s;
+      }
     }
 
     .nav-center {
@@ -39,9 +39,11 @@
           color: var(--secondary-grey);
           font-size: 15px;
           font-weight: 500;
+           border-bottom: 4px solid transparent;
           &:hover {
-            border-bottom: 3px solid var(--light-green);
+            border-bottom: 4px solid var(--light-green);
             transition: all ease 0.5s;
+            cursor: pointer;
           }
         }
       }

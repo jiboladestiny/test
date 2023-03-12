@@ -26,7 +26,7 @@ const Services = () => {
         <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
             <img src={writting} width="45" alt="" />
-            <p className="mt-2">Content Writing</p>
+            <p className="mt-2">Content Creation</p>
           </div>
         </div>
         <div className="col-md-6 col-lg-3">
