@@ -31,8 +31,14 @@ const Herosection = () => {
                 memorable brand identities
               </p>
 
-              <button className="hero-btn mt-3 d-flex align-item-center">
-                Contact us <i class="bx bxs-right-arrow-circle"></i>
+              <button
+                className="hero-btn mt-3 d-flex align-item-center"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.location.href = "https://wa.me/08155199463";
+                }}
+              >
+                Request Consultation
               </button>
             </div>
 
