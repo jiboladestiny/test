@@ -18,7 +18,7 @@ function App() {
         <Work />
       </div>
       <Testimonials />
-      <Blog />
+  
 <Nesletter/>
     <Footer/>
     </>

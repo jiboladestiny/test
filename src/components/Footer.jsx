@@ -37,43 +37,7 @@ const Footer = () => {
                 <li class="nav-item ">Blog</li>
               </ul>
             </div>
-            <div class="col-md-4 col-lg-3">
-              <h4 className="green-header">LATEST NEWS</h4>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <div className="d-flex gap-2">
-                    <div>
-                      <img src={footerblog} alt="" srcset="" />
-                    </div>
-                    <div>
-                      <h4 className="paragraph">Per Click Management</h4>
-                      <p className="paragraph-2">
-                        PageTraffic is a premier Search Engine Marketing ( SEM).
-                      </p>
-                      <p className="paragraph-4 d-flex align-items-center gap-1">
-                        <i class="bx bxs-circle"></i> 15 April 2021
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item mb-2">
-                  <div className="d-flex gap-2">
-                    <div>
-                      <img src={footerblog} alt="" srcset="" />
-                    </div>
-                    <div>
-                      <h4 className="paragraph">Per Click Management</h4>
-                      <p className="paragraph-2">
-                        PageTraffic is a premier Search Engine Marketing ( SEM).
-                      </p>
-                      <p className="paragraph-4 d-flex align-items-center gap-1">
-                        <i class="bx bxs-circle"></i> 15 April 2021
-                      </p>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+  
           </div>
         </div>
         <hr />
