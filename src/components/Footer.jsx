@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="footer">
-        <div className="container">
+        <div className="container py-5">
   
           <div className="row gy-4">
             <div className="col-md-4">
@@ -21,15 +21,15 @@ const Footer = () => {
               </p>
 
               <div className="icon-cont d-flex gap-3 mt-3">
-                <img src={facebook} width={35} alt="" />
-                <img src={linkedin} width={35} alt="" />
-                <img src={twitter} width={35} alt="" />
-                <img src={youtube} width={35} alt="" />
+                <img src={facebook} width={25} alt="" />
+                <img src={linkedin} width={25} alt="" />
+                <img src={twitter} width={25} alt="" />
+                <img src={youtube} width={25} alt="" />
               </div>
             </div>
             <div class="col-md-4">
               <h4 className="green-header">COMPANY</h4>
-              <ul class="nav flex-column">
+              <ul class="nav flex-column paragraph">
                 <li class="nav-item mb-2">About</li>
                 <li class="nav-item mb-2">Services</li>
                 <li class="nav-item mb-2">Latest work</li>
