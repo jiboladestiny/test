@@ -37,14 +37,14 @@ const Services = () => {
         </div>
         <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
-            <img src={website} width="45" alt="" />
+            <img src={website} width="45" alt="website" />
             <p className="mt-2">Website design & Development</p>
           </div>
         </div>
 
         <div className="col-md-6 col-lg-3">
           <div className="service-wrapper">
-            <img src={social} width="45" alt="" />
+            <img src={social} width="45" alt="socail" />
             <p className="mt-2">Graphics & Social media Marketing</p>
           </div>
         </div>
