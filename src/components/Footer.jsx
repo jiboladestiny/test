@@ -4,7 +4,7 @@ import facebook from '../asset/footer/facebook.svg'
 import linkedin from '../asset/footer/linkedin.svg'
 import twitter from '../asset/footer/twitter.svg'
 import youtube from "../asset/footer/youtube.svg";
-import footerblog from "../asset/footer/footerblogimg.svg";
+
 
 
 const Footer = () => {

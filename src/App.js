@@ -1,5 +1,4 @@
 import About from "./components/About";
-import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import Herosection from "./components/Herosection";
 import Nesletter from "./components/Nesletter";
