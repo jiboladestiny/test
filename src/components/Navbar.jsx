@@ -32,7 +32,7 @@ useEffect(() => {
   };
 }, []);
   return (
-    <div className="topnav">
+    <nav className="topnav">
       <div className="container">
         <div className="nav-logo">
           <img src={logo} alt="" />
@@ -46,10 +46,42 @@ useEffect(() => {
         </div>
         <div className={nav === 1 ? "mobile-nav active" : "mobile-nav"}>
           <ul class="nav flex-column">
-            <li class="nav-item p-2 ms-3" >About </li>
-            <li class="nav-item p-2 ms-3">Services</li>
-            <li class="nav-item p-2 ms-3">Latest work</li>
-            <li class="nav-item p-2 ms-3">Testimonial</li>
+            <li class="nav-item p-2 ms-3">
+              {" "}
+              <a
+                href="#about"
+                className={currentSection === "about" ? "active" : ""}
+              >
+                About Us
+              </a>{" "}
+            </li>
+            <li class="nav-item p-2 ms-3">
+              {" "}
+              <a
+                href="#services"
+                className={currentSection === "services" ? "active" : ""}
+              >
+                Services
+              </a>
+            </li>
+            <li class="nav-item p-2 ms-3">
+              {" "}
+              <a
+                href="#work"
+                className={currentSection === "work" ? "active" : ""}
+              >
+                Latest Works
+              </a>
+            </li>
+            <li class="nav-item p-2 ms-3">
+              {" "}
+              <a
+                href="#testimonial"
+                className={currentSection === "testimonial" ? "active" : ""}
+              >
+                Testimonial
+              </a>
+            </li>
             <li class="nav-item p-2 ms-3">
               <button className="hero-btn">Contact us</button>
             </li>
@@ -57,10 +89,41 @@ useEffect(() => {
         </div>
         <div className="nav-center">
           <ul className="gap-5 list-unstyle ">
-            <li className="text-right" >About Us</li>
-            <li>Services</li>
-            <li>Latest Work</li>
-            <li>Testimonials</li>
+            <li className="text-right active">
+              <a
+                href="#about"
+                className={currentSection === "about" ? "active" : ""}
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a
+                href="#services"
+                className={currentSection === "services" ? "active" : ""}
+              >
+                Services
+              </a>{" "}
+            </li>
+            <li>
+              {" "}
+              <a
+                href="#work"
+                className={currentSection === "work" ? "active" : ""}
+              >
+                Latest Works
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a
+                href="#testimonial"
+                className={currentSection === "testimonial" ? "active" : ""}
+              >
+                Testimonial
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -69,7 +132,7 @@ useEffect(() => {
           <button className="hero-btn">Contact us</button>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

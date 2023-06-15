@@ -35,12 +35,17 @@
         display: flex;
         list-style-type: none;
 
-        li {
-          color: var(--secondary-grey);
+        li{
+    
           font-size: 15px;
           font-weight: 500;
-           border-bottom: 4px solid transparent;
-          &:hover, .active {
+          border-bottom: 4px solid transparent;
+          a{
+            text-decoration: none;
+            color: white;
+          }
+          &:hover,
+          .active {
             border-bottom: 4px solid var(--light-green);
             transition: all ease 0.5s;
             cursor: pointer;
