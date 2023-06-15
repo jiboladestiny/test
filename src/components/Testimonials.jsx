@@ -1,142 +1,104 @@
-import React, { useState, useRef } from "react";
-import testimg1 from "../asset/testimonials/testimg1.svg";
-import doe from "../asset/testimonials/doe.svg";
-import zoe from "../asset/testimonials/zoe.svg";
+import React, { useEffect, useState } from "react";
+import doe from "../asset/testimonials/blackman1.jpeg";
+import blk2 from "../asset/testimonials/blackman2.webp";
+import blk3 from "../asset/testimonials/blackman3.webp";
 
 const Testimonials = () => {
-  const containerRef = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
+    const [scrollPosition, setScrollPosition] = useState(0);
+      useEffect(() => {
+        const handleScroll = () => {
+          setScrollPosition(window.scrollX);
+        };
 
-  const handleScroll = () => {
-    const newPosition = containerRef.current.scrollLeft;
-    if (newPosition !== scrollPosition) {
-      setScrollPosition(newPosition);
-    }
-  };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+  // const containerRef = useRef(null);
+  // const [scrollPosition, setScrollPosition] = useState(0);
 
-  const handleScrollBackward = () => {
-    containerRef.current.scrollBy({
-      left: -500,
-      behavior: "smooth",
-    });
-  };
+  // const handleScroll = () => {
+  //   const newPosition = containerRef.current.scrollLeft;
+  //   if (newPosition !== scrollPosition) {
+  //     setScrollPosition(newPosition);
+  //   }
+  // };
 
-  const handleScrollForward = () => {
-    containerRef.current.scrollBy({
-      left: 500,
-      behavior: "smooth",
-    });
-  };
+  // const handleScrollBackward = () => {
+  //   containerRef.current.scrollBy({
+  //     left: -500,
+  //     behavior: "smooth",
+  //   });
+  // };
+
+  // const handleScrollForward = () => {
+  //   containerRef.current.scrollBy({
+  //     left: 500,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
-    <div className="tesimonials">
+    <section className="tesimonials" id="testimonial">
       <div className="container">
         <h2 className="heading-2 mb-4">Testimonial</h2>
 
         <div
           className="testimonial-wrapper gap-4"
-          ref={containerRef}
-          onScroll={handleScroll}
+          style={{ transform: `translateX(-${scrollPosition}px)` }}
         >
           <div className="testimonial-container">
             <div className="d-flex align-items-center detail">
               <div>
-                <img src={testimg1} width="44" alt="" />
+                <img src={blk2} width={44} height={44} alt="" />
               </div>
               <div className="ms-3 right">
-                <h2>Zoe Matins</h2>
-                <p>Founder, Alpha Group</p>
+                <h2>Solomon. B</h2>
+                <p>Client</p>
               </div>
             </div>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod
+              I can't thank Maraya Web Development Agency enough for their
+              outstanding work. They truly understood our brand and brought it
+              to life with a visually stunning website
             </p>
           </div>
           <div className="testimonial-container">
             <div className="d-flex align-items-center detail">
               <div>
-                <img src={doe} width="44" alt="" />
+                <img src={doe} width={44} height={44} alt="" />
               </div>
               <div className="ms-3 right">
-                <h2>Zoe Matins</h2>
-                <p>Founder, Alpha Group</p>
+                <h2>Richard. M</h2>
+                <p>Client</p>
               </div>
             </div>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod
+              Working with Maraya Web Development Agency was a breeze. Their team
+              took the time to listen to our needs and delivered a website that
+              exceeded our expectations
             </p>
           </div>
           <div className="testimonial-container">
             <div className="d-flex align-items-center detail">
               <div>
-                <img src={zoe} width="44" alt="" />
+                <img src={blk3} width={44} height={44} alt="" />
               </div>
               <div className="ms-3 right">
-                <h2>Zoe Matins</h2>
-                <p>Founder, Alpha Group</p>
+                <h2>Shola. A</h2>
+                <p>Client</p>
               </div>
             </div>
             <p className="paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod
+              "Maraya Web Development Agency made the whole process enjoyable.
+              Their team was attentive, patient, and turned our ideas into a
+              beautiful website."
             </p>
           </div>
-          <div className="testimonial-container">
-            <div className="d-flex align-items-center detail">
-              <div>
-                <img src={testimg1} width="44" alt="" />
-              </div>
-              <div className="ms-3 right">
-                <h2>Zoe Matins</h2>
-                <p>Founder, Alpha Group</p>
-              </div>
-            </div>
-            <p className="paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod
-            </p>
-          </div>
-          <div className="testimonial-container">
-            <div className="d-flex align-items-center detail">
-              <div>
-                <img src={testimg1} width="44" alt="" />
-              </div>
-              <div className="ms-3 right">
-                <h2>Zoe Matins</h2>
-                <p>Founder, Alpha Group</p>
-              </div>
-            </div>
-            <p className="paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod
-            </p>
-          </div>
-          <div className="testimonial-container">
-            <div className="d-flex align-items-center detail">
-              <div>
-                <img src={doe} width="44" alt="" />
-              </div>
-              <div className="ms-3 right">
-                <h2>Zoe Matins</h2>
-                <p>Founder, Alpha Group</p>
-              </div>
-            </div>
-            <p className="paragraph">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod
-            </p>
-          </div>
-        </div>
-
-        <div className="scroll-controller gap-2">
-          <div onClick={handleScrollBackward}></div>
-          <div onClick={handleScrollForward}></div>
-          <div onClick={handleScrollForward}></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

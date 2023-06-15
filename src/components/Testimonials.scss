@@ -7,28 +7,28 @@
   .testimonial-wrapper {
     display: flex;
     overflow-x: scroll;
+    width: 100%;
+    height: 100%;
     &::-webkit-scrollbar {
-  height: 10px;
-}
+      height: 10px;
+    }
     .testimonial-container {
-        border-radius: 12px;
+      border-radius: 12px;
       min-width: 422px;
       padding: 0.8em;
       background-color: var(--secondary-black);
-   
 
       .detail {
-        .right{
-            margin-top: 1.2rem;
+        .right {
+          margin-top: 1.2rem;
         }
-        img{
-            border-radius: 50%;
+        img {
+          border-radius: 50%;
         }
         h2 {
           font-size: 16px;
           font-weight: 700;
           line-height: 8px;
-     
         }
         p {
           font-size: 13px;
@@ -38,15 +38,14 @@
     }
   }
 
-  .scroll-controller{
+  .scroll-controller {
     margin-top: 2rem;
-        display: flex;
-    div{
-        cursor: pointer;
-        width: 30px;
-        height:4px;
-        background-color: var(--white);
-    
+    display: flex;
+    div {
+      cursor: pointer;
+      width: 30px;
+      height: 4px;
+      background-color: var(--white);
     }
   }
 }

@@ -1,13 +1,36 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../asset/marketing agency 1.svg";
 
 function Navbar() {
   const [nav, setNav] = useState(0);
+const [currentSection, setCurrentSection] = useState("");
 
-  // const toggleMenu = () => {
-  //   setIsMenuOpen(!isMenuOpen);
-  // };
+useEffect(() => {
+  const handleScroll = () => {
+    const sections = document.querySelectorAll("section");
+    let current = "";
 
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (
+        window.pageYOffset >= sectionTop - 50 &&
+        window.pageYOffset < sectionTop + sectionHeight - 50
+      ) {
+        current = section.id;
+      }
+    });
+
+    setCurrentSection(current);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll();
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
   return (
     <div className="topnav">
       <div className="container">
@@ -23,7 +46,7 @@ function Navbar() {
         </div>
         <div className={nav === 1 ? "mobile-nav active" : "mobile-nav"}>
           <ul class="nav flex-column">
-            <li class="nav-item p-2 ms-3">About</li>
+            <li class="nav-item p-2 ms-3" >About </li>
             <li class="nav-item p-2 ms-3">Services</li>
             <li class="nav-item p-2 ms-3">Latest work</li>
             <li class="nav-item p-2 ms-3">Testimonial</li>
@@ -34,7 +57,7 @@ function Navbar() {
         </div>
         <div className="nav-center">
           <ul className="gap-5 list-unstyle ">
-            <li className="text-right">About Us</li>
+            <li className="text-right" >About Us</li>
             <li>Services</li>
             <li>Latest Work</li>
             <li>Testimonials</li>

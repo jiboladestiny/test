@@ -40,7 +40,7 @@ const Work = () => {
     </button>
   ));
   return (
-    <div className="works">
+    <section className="works" id="work">
       <h2 className="heading text-center">Latest Works</h2>
 
       <div className="d-flex justify-content-md-center mt-4">
@@ -147,7 +147,7 @@ const Work = () => {
       <div className="d-flex justify-content-center mt-5">
         <button className="general-btn">See more</button>
       </div>
-    </div>
+    </section>
   );
 };
 

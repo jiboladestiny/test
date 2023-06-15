@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="row justify-content-center text-center spacing">
+    <section className="row justify-content-center text-center spacing" id='about'>
       <div className="col-lg-6 col-md-8">
         <h2 className='heading'>About Us</h2>
         <p className='paragraph mt-4'>
@@ -12,7 +12,7 @@ const About = () => {
 
         <button className='general-btn mt-5'>Learn more</button>
       </div>
-    </div>
+    </section>
   );
 }
 

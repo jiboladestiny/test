@@ -5,7 +5,7 @@ import writting from "../asset/services/writting.svg";
 import social from "../asset/services/social.svg";
 const Services = () => {
   return (
-    <div className="services">
+    <section className="services" id="services">
       <div className="row text-center justify-content-center">
         <div className="col-lg-6 col-md-8">
           <h2 className="heading">Our Services</h2>
@@ -49,7 +49,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
